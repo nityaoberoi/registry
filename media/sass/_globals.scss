@@ -1,0 +1,11 @@
+/* -------------------*/
+/* functions & mixins */
+/* -------------------*/
+
+@function gray($intensity) {
+  @return #111 * $intensity;
+}
+
+body {
+    background: url('../img/bg.jpg') top left repeat;
+}
