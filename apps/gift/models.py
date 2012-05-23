@@ -27,4 +27,4 @@ class Item(models.Model):
     date_added = models.DateTimeField(auto_now_add=True, editable=False)
     last_modified = models.DateTimeField(auto_now=True)
 
-    lists = models.ManyToManyField('list.GiftList')
+    lists = models.ManyToManyField('gift.GiftList')

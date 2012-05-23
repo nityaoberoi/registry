@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+GENDER_CHOICES = (('M', 'Male'),
+                ('F', 'Female'))
 
 class Account(models.Model):
     """
@@ -16,7 +18,7 @@ class Profile(models.Model):
     first_name = models.CharField(max_length=100, blank=True)
     last_name = models.CharField(max_length=100, blank=True)
     
-    gender = models.Choices
+    gender = models.CharField(max_length=8, choices=GENDER_CHOICES)
     image = models.ImageField(upload_to="profile_picture", blank=True)
 
     city = models.CharField(max_length=100, blank=True)
