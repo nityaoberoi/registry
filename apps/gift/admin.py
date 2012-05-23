@@ -1,4 +1,4 @@
-from django.db import admin
+from django.contrib import admin
 
 from gift.models import GiftList, Item
 
